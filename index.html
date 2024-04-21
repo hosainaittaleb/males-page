@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@ FAVICON @@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@ icons.getbootstrap.com  @@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <link rel="stylesheet" href="./bootstrap-icons.css" />
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@   swiperjs.com   @@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css" />
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@   CSS   @@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>YOUFit.</title>
+  </head>
+  <body>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@  HEADER  @@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="#" class="nav__logo">YOUFit.</a>
+
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link active-link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#bmi" class="nav__link">Generate</a>
+              </li>
+              <li class="nav__item">
+                <a href="./assets/index/login.html" class="btn log__btn" id="log-btn">Register Now</a>
+              </li>
+              <span class="toggle-btn">
+                <label class="themeName" for="themeSwitch">Day</label>
+                <div class="toggle">
+                  <div class="inner-toggle"></div>
+                </div>
+              </span>
+            </ul>
+
+            <i class="bi bi-x nav__close" id="nav-close"></i>
+          </div>
+
+          <i class="bi bi-list nav__toggle" id="nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+      <!-- @@@@@@@@@@@@@@   HOME  @@@@@@@@@@@@@@ -->
+      <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+      <section class="home" id="home">
+        <div class="container">
+          <div class="home__container">
+            <div class="home__data">
+              <h2 class="home__subtitle">MAKE YOUR</h2>
+              <h1 class="home__title">BODY SHAPE</h1>
+              <p class="home__description">
+                In here we will help you to shape and build your ideal body and
+                live your life to the fullest.
+              </p>
+              <a href="#" class="btn home__btn">Get Started</a>
+            </div>
+
+            <div class="home__images">
+              <img
+                src="./assets/img/login1.png"
+                alt="home image"
+                class="home__img"
+              />
+
+              <div class="home__triangle home__triangle-1"></div>
+              <div class="home__triangle home__triangle-2"></div>
+              <div class="home__triangle home__triangle-3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+      <!-- @@@@@@@@@@@@   Generate  @@@@@@@@@@@@ -->
+      <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+      <section class="section bmi" id="bmi">
+        <div class="container">
+          <div class="bmi__container">
+            <div class="bmi__data">
+              <h2 class="section-title"><span>Enter your </span> details below</h2>
+              <p class="bmi__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum facilis adipisci in dolores voluptas, enim consequuntur consectetur expedita! Doloribus veniam consequuntur, quis sint facilis dignissimos amet quos porro! Optio, doloribus?
+              </p>
+
+              <form class="bmi__form" id="bmi-form">
+                <div class="bmi__input">
+                  <input
+                    type="number"
+                    placeholder="Weight"
+                    name=""
+                    id="bmi-kg"
+                  />
+                  <label for="">kg</label>
+                </div>
+                <div class="bmi__input">
+                  <select>
+                    <option selected value="0">Activity Level</option>
+                    <option value="1">moderate</option>
+                    <option value="2">active</option>
+                    <option value="3">very_active</option>
+                  </select>
+                </div>
+                <div class="bmi__input">
+                <select>
+                  <option selected value="0">Gender</option>
+                  <option value="1">male</option>
+                  <option value="2">famle</option>
+                </select>
+                </div>
+                <div class="bmi__input">
+                  <select>
+                    <option selected value="0">Activity Level</option>
+                    <option value="1">moderate</option>
+                    <option value="2">active</option>
+                    <option value="3">very_active</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn bmi__btn">
+                  Generate
+                </button>
+
+                <p class="bmi__message" id="bmi-message"></p>
+              </form>
+            </div>
+
+            <img src="./assets/img/login3.png" alt="bmi img" class="bmi__img" />
+          </div>
+        </div>
+      </section>
+      <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+      <!-- @@@@@@@@@@@@   Cards  @@@@@@@@@@@@ -->
+      <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+      <section class="cards-box">
+        <!-- First card -->
+        <div class="card">
+            <img src="./assets/img/1.jpg" alt="">
+            <div>
+                <h3 style="color: darkgoldenrod;">Meals 1</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt illum nesciunt quod natus repellat vero?</p>
+                <a href="">Read more</a>
+              </div>    
+        </div>
+        <!-- Second card -->
+        <div class="card">
+            <img src="./assets/img/2.jpg" alt="">    
+            <div>
+                <h3 style="color: darkred;">Meals 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt illum nesciunt quod natus repellat vero?</p>
+                <a href="/assets/index/cards2.html">Read more</a>
+              </div>
+        </div>
+        <!-- Third card -->
+        <div class="card">
+            <img src="./assets/img/3.jpg" alt="">
+            <div>
+                <h3 style="color: darkmagenta;">Meals 3</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt illum nesciunt quod natus repellat vero?</p>
+                <a href="/assets/index/cards3.html">Read more</a>
+              </div>
+        </div> 
+    </section>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@  FOOTER  @@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <footer class="footer section" id="footer">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__content">
+            <a href="#" class="footer__logo">YOUFit.</a>
+            <p class="footer__description">
+              Subscribe for company <br />
+              updates below.
+            </p>
+            <form action="" class="footer__form" id="footer-form">
+              <input
+                type="email"
+                name="user_email"
+                placeholder="Your Email"
+                class="footer__input"
+                id="footer-input"
+              />
+              <button type="submit" class="btn footer__btn">Subscribe</button>
+
+              <p class="footer__message" id="footer-message"></p>
+            </form>
+          </div>
+
+          <div class="footer__content">
+            <h3 class="footer__title">information</h3>
+            <ul class="footer__list">
+              <li>
+                <a
+                  target="_blank"
+                  href="tel:+989353770255"
+                  class="footer__link"
+                >
+                  (+98)9353770255</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.google.com/maps/place/Piroozi+Metro+Station/@35.6906275,51.4678442,18z/data=!4m5!3m4!1s0x3f8e027b555fc43b:0x1682d8b3b203a6db!8m2!3d35.6910109!4d51.4679227"
+                  class="footer__link"
+                >
+                  MFR9+C5,Piroozi St,<br />
+                  Farah Abad,<br />Tehran, Iran</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__content">
+            <h3 class="footer__title">Pricing</h3>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Basic</a></li>
+              <li><a href="#" class="footer__link">Premium</a></li>
+              <li><a href="#" class="footer__link">Diamond</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__content">
+            <h3 class="footer__title">Company</h3>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">About Us</a></li>
+              <li><a href="#" class="footer__link">Careers</a></li>
+              <li><a href="#" class="footer__link">Customers</a></li>
+              <li><a href="#" class="footer__link">Partners</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__group">
+          <div class="footer__social">
+            <a
+              target="_blank"
+              href="https://twitter.com/"
+              class="footer__social-link"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/"
+              class="footer__social-link"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/"
+              class="footer__social-link"
+              ><i class="bi bi-youtube"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://web.whatsapp.com/"
+              class="footer__social-link"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@   SCROLLUP   @@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <a href="#" class="scrollup" id="scrollup"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@   swiperjs.com   @@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@    scrollrevealjs.org   @@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@    emailjs.com   @@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@   JS    @@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <script src="./assets/js/main.js"></script>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@   night black mode   @@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->   
+    <script src="./assets/js/Nibck.js"></script>
+
+  </body>
+</html>
